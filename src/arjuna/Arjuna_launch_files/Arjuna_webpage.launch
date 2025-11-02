@@ -1,0 +1,12 @@
+<launch>
+  <node pkg="arjuna" type="cpu_ram.py" name="Cpu_Ram_publisher" />
+
+  <node pkg="arjuna" type="voltage_to_webpage.py" name="voltage_publisher" />
+
+  <node pkg="arjuna" type="webpage_camera_pub.py" name="Webpage_camera_publisher" />
+
+  <node pkg="arjuna" type="Mecanum_contol_for_webpage.py" name="Arjuna_mecanum_ticks_pub" />
+
+  <node pkg="arjuna" type="Torch.py" name="Torch_control" />
+
+</launch>

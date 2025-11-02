@@ -1,0 +1,10 @@
+# Goal
+int32 target
+
+---
+# Result
+int32 total
+
+---
+# Feedback
+int32 progress

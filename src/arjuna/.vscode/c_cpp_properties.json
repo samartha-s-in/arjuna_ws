@@ -1,0 +1,32 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/arjuna/arjuna_ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/arjuna/arjuna_ws/src/actionlib_basics/include/**",
+        "/home/arjuna/arjuna_ws/src/arjuna/include/**",
+        "/home/arjuna/arjuna_ws/src/custom_msg/include/**",
+        "/home/arjuna/arjuna_ws/src/hector_slam/hector_geotiff/include/**",
+        "/home/arjuna/arjuna_ws/src/hector_slam/hector_map_tools/include/**",
+        "/home/arjuna/arjuna_ws/src/hector_slam/hector_mapping/include/**",
+        "/home/arjuna/arjuna_ws/src/hector_slam/hector_marker_drawing/include/**",
+        "/home/arjuna/arjuna_ws/src/ros-imu-bno055/include/**",
+        "/home/arjuna/arjuna_ws/src/odometry/include/**",
+        "/home/arjuna/arjuna_ws/src/rosserial/rosserial_server/include/**",
+        "/home/arjuna/arjuna_ws/src/rosserial/rosserial_test/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-arm64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

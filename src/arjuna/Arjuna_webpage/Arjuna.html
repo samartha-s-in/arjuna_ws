@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARJUNA</title>
+    <link rel="stylesheet" href="/home/arjuna/arjuna_ws/src/arjuna/Arjuna_webpage/Arjuna.css"> <!-- Link to external CSS file -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/eventemitter2@6.4.9/lib/eventemitter2.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/roslib@1/build/roslib.min.js"></script>
+</head>
+
+<body>              
+<div class="remote-container">
+    <img src="/home/jetson/Downloads/NR_LOGO.png" alt="Logo" class="logo"> <!-- Replace with your logo URL -->
+    <input type="range" class="Linear_velocity" id="linear_velo_id" min="0" max="5.0" value="1.0">
+  
+    <input type="range" class="Angular_velocity" id="angular_velo_id" min="0" max="5.0" value="1.0">
+
+    <p id="linear_velocity_header"><span id="Linear_Velo"></span></p>
+
+    <p id="angular_velocity_header"><span id="Angular_velo"></span></p>
+
+    <p id="battery_inside_header"><span id="battery_data"></span></p>
+
+    <p id="battery_percentage"><strong>%</strong></p>
+
+    <div class="battery">
+        <img src="https://img.icons8.com/material-outlined/24/000000/full-battery.png" alt="Battery Icon" class="battery-icon">
+    </div>
+
+    <div class="main_container">
+        <canvas id="imageCanvas"></canvas>
+    </div> 
+    <div class="big-circle">
+        <button class="arrow-button up"  onclick="move_forward()">
+            <div class="arrow-icon up"></div>
+        </button>
+        <button class="arrow-button down" onclick="move_backward()">
+            <div class="arrow-icon down"></div>
+        </button>
+        <button class="arrow-button left" onclick="turn_left()">
+            <div class="arrow-icon left"></div>
+        </button>
+        <button class="arrow-button right" onclick="turn_right()">
+            <div class="arrow-icon right"></div>
+        </button>
+        <button class="center-button" onclick="stop()"></button>
+    </div>
+    <div class="additional-buttons">
+        <button class="additional-button">🔦</button>
+        <button class="additional-button">❌</button>
+    </div>
+    <div class="label_AV">A-V</div>
+    <div class="label_LV">L-V</div>
+</div>
+
+<script src="/home/arjuna/arjuna_ws/src/arjuna/Arjuna_webpage/Arjuna.js"></script> <!-- Link to external JavaScript file -->
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+float32 dog_length
+float32 dog_height
+float32 dog_distance

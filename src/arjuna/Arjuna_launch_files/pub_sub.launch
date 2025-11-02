@@ -1,0 +1,7 @@
+<launch>
+
+<node pkg = "arjuna" type="Publisher.py" name="Publisher"/>
+
+<node pkg = "arjuna" type="Subscriber.py" name = "Listener"/>
+
+</launch>
